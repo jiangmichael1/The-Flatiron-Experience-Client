@@ -1,0 +1,57 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: 'Amatic SC', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+#grid {
+    padding-left: 20%;
+    position: middle;
+    display: inline-grid;
+    grid-template-rows:    repeat(6,1fr);
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+}
+  
+.center-tile {
+    grid-row:    2 / 6;
+    grid-column: 2 / 6;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #757575;
+    background-image: url("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/999/s300/flatironschool.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.tile {
+    color: rgba(11, 79, 108, 1);
+    background-color: rgba(0, 179, 230, 1);
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #757575;
+    height: 100px;
+    width: 100px;
+}
+  
+div.dice{
+    float: center;
+    width:32px;
+    background: #f5f5f5;
+    border: #999 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+
+.dieBtn{
+    float: left;
+    padding: 5px;
+    border: #999 1px solid;
+    border-radius: 20px;
+}

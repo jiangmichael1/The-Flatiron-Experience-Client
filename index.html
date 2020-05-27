@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <title>The Flatiron Experience</title>
+    <header id="header">
+        <h1>Welcome to <em>The Flatiron School Experience</em></h1>
+    </header>
+
+
+
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <script type="text/javascript" src="src/index.js" defer></script>
+    <script>
+        function rollDice(){
+          let die1 = document.getElementById('die1')
+          // let die2 = document.getElementById('die2')
+          let status = document.getElementById('status')
+          let d1 = Math.floor(Math.random() * 6) + 1
+          // let d2 = Math.floor(Math.random() * 6) + 1
+          let diceTotal = d1
+          die1.innerHTML = d1
+          // die2.innerHTML = d2
+          status.textContent = `You rolled ${diceTotal}!`
+        }
+    </script>
+  </header>
+  <body>
+    <div id="grid">
+      <div id="1" class="tile">
+        Start (Tile 1)
+      </div>
+      <div id="2" class="tile">
+        Tile 2
+      </div>
+      <div id="3" class="tile">
+        Tile 3
+      </div>
+      <div id="4" class="tile">
+        Tile 4
+      </div>
+      <div id="5" class="tile">
+        Mod 1 Code Challenge (Tile 5)
+      </div>
+      <div id="6" class="tile">
+        Tile 6
+      </div>
+      <div id="20" class="tile">
+        Mod 5 Project! (Tile 20)
+      </div>
+      <div id="7" class="tile">
+        Lecture (Tile 7)
+      </div>
+      <div id="19" class="tile">
+        Tile 19
+      </div>
+      <div id="8" class="tile">
+        Tile 8
+      </div>
+      <div id="18" class="tile">
+        Tile 18
+      </div>
+      <div id="9" class="tile">
+        Mod 2 Code Challenge (Tile 9)
+      </div>
+      <div id="17" class="tile">
+        Mod 4 Code Challenge (Tile 17)
+      </div>
+      <div id="10" class="tile">
+        Tile 10
+      </div>
+      <div id="16" class="tile">
+        Tile 16
+      </div>
+      <div id="15" class="tile">
+        Tile 15
+      </div>
+      <div id="14" class="tile">
+        Tile 14
+      </div>
+      <div id="13" class="tile">
+        Mod 3 Code Challenge (Tile 13)
+      </div>
+      <div id="12" class="tile">
+        Tile 12
+      </div>
+      <div id="11" class="tile">
+        Tile 11
+      </div>
+      <div class="center-tile">
+        <div id="die1" class="dice">0</div>
+        <!-- <div id="die2" class="dice">0</div> -->
+        <button class="dieBtn" onclick="rollDice()"> Roll Dice</button>
+        <h2 id="status" style="clear: left;"> </h2>
+      </div>
+  </body>
+</html>
