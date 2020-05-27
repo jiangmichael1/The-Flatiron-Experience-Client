@@ -4,7 +4,12 @@ On landing page, create a prompt for User name input
 create a new user with this input
 User input will include a default picture if they don't upload one.
 */
-const users = 'http://localhost:3000/users'
+const usersUrl = 'http://localhost:3000/users'
+const urlHeaders= {
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+}
+
 const header = document.querySelector('#header')
 let board = document.querySelector('#grid')
 board.style.display = "none"
@@ -32,7 +37,19 @@ function displayLandingPage(){
 const playBtn = document.querySelector('.playBtn')
 
 playBtn.addEventListener('click', event => {
-    // console.log(event.target)
+    let createUserValue = document.querySelector('.createNameTextField').value
+    // console.log(createUserValue)
+    fetch(usersUrl, {
+        method: 'POST',
+        headers: urlHeaders,
+        body: JSON.stringify({
+            name: `${createUserValue}`,
+            skills: none,
+            coding_knowledge: 0,
+            img_url: "https://www.asbmb.org/img/content-images/generic-user.jpg",
+            turns: 0
+        })
+    })
     header.style.display = "none"
     boardDisplayOnOff()
 })
