@@ -1,3 +1,15 @@
+html {
+    background-image: url("https://i.ibb.co/DLLWm7V/campus-4.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+body {
+    margin:0px;
+    font-family:'Roboto';
+    text-align:center;
+}
+
 body, h1,h2,h3,h4,h5,h6 {
     font-family: 'Amatic SC', sans-serif;
     letter-spacing: 2px;
@@ -54,4 +66,93 @@ div.dice{
     padding: 5px;
     border: #999 1px solid;
     border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Landing Page Animation */
+
+.playBtn {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 250px; 
+}
+
+.playBtn:hover{
+    background-color: rgba(117, 117, 117, 0.8);
+    cursor: pointer;
+
+}
+
+#container {
+    
+    color:black;
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    padding-top:250px;  
+    top: 10%;
+    width:100%;
+    bottom:45%;
+    display:block;
+}
+
+#flip {
+    height:50px;
+    overflow:hidden;
+}
+
+#flip > div > div {
+    color:#fff;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#flip div div {
+    background:#20BF55;
+}
+
+#flip div:first-child div {
+    background:#45C9F5;
+}
+#flip div:last-child div {
+    background:#0B4F6C;
+}
+
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
 }

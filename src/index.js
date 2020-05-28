@@ -1,6 +1,7 @@
 /* PSEUDO CODE
 √ Set display for board to none and then on click for play, set display to inline-grid
 On landing page, create a prompt for User name input
+Ask for upload img - or not
 create a new user with this input
 User input will include a default picture if they don't upload one.
 */
