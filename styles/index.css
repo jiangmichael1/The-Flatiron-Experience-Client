@@ -141,33 +141,83 @@ div.dice{
 
 /* Landing Page Animation */
 
-.instructions{
-    font-size: 18px;
-    font-weight: bold;
-}
-.playBtn {
+.createUser{
     font-size: 40px;
+    text-align: center;
+}
+
+input[type="text"]{
+    font-size:24px;
+}
+
+#submitUsername{
+    font-size: 20px;
     font-weight: bold;
     font-style: italic;
     margin: auto;
     margin-top: 50px;
-    padding: 20px;
+    padding: 15px;
     border: 3px solid black;
     border-radius: 50px;
     width: 250px; 
 }
 
-.playBtn:hover{
+#submitUsername:hover{
     background-color: rgba(117, 117, 117, 0.8);
     cursor: pointer;
+}
 
+.instructions{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+.newGameBtn {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 250px; 
+}
+
+.newGameBtn:hover{
+    background-color: rgba(117, 117, 117, 0.8);
+    cursor: pointer;
+}
+
+.defaultNameChosen{
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    border: 
+}
+.continueBtn {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 250px; 
+}
+
+.continueBtn:hover{
+    background-color: rgba(117, 117, 117, 0.8);
+    cursor: pointer;
 }
 
 #container {
     
     color:black;
     text-transform: uppercase;
-    font-size:36px;
+    font-size:40px;
     font-weight:bold;
     padding-top:250px;  
     top: 10%;
@@ -214,3 +264,5 @@ div.dice{
     99.99% {margin-top:0px;}
     100% {margin-top:-270px;}
 }
+
+

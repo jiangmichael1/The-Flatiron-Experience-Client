@@ -7,26 +7,49 @@ const urlHeaders= {
 
 const header = document.querySelector('#header')
 const landingPageObjects = document.querySelector('#container')
-const playBtn = document.querySelector('.playBtn')
+const newGameBtn = document.querySelector('.newGameBtn')
+const continueBtn = document.querySelector('.continueBtn')
+const newPlayBtn = document.querySelector('#submitUsername')
 const dieBtn = document.querySelector('.dieBtn')
 const centerDisplay = document.querySelector('.center-tile')
 const centerDisplayText = document.querySelector('#center-text')
 const notYetMsg = document.querySelector('.notYetMsg')
 const instructions = document.querySelector('.instructions')
+const createUserDisplay = document.querySelector('.createUser')
+const defaultNameMsg = document.querySelector('.defaultNameChosen')
+
 let playerSkills = []
 let playerCodingKnowledge = 0
 let board = document.querySelector('#grid')
 
+createUserDisplay.style.display = 'none'
 notYetMsg.style.display = "none"
 board.style.display = "none"
+defaultNameMsg.style.display = "none"
+newPlayBtn.style.display = "none"
 
 
-playBtn.addEventListener('click', event => {
+newGameBtn.addEventListener('click', event => { 
+    
+    createUserDisplay.style.display = 'block'
     landingPageObjects.remove()
-    playBtn.remove()
+    newGameBtn.remove()
+    continueBtn.remove(0)
     instructions.style.display = "none"
-    boardDisplayOnOff()
-    createPlayerPiece()
+    newPlayBtn.style.display = 'block'
+    
+})
+
+newPlayBtn.addEventListener('click',event => {
+    const usernameText = document.querySelector('.usernameText').value
+    if (usernameText === "Username"){
+        defaultNameMsg.style.display = 'block'
+    }
+    
+
+    // createUserDisplay.remove()
+    // boardDisplayOnOff()
+    // createPlayerPiece()
 })
 
 dieBtn.addEventListener('click', event => {
@@ -147,6 +170,16 @@ function movePlayerPiece(){
         notYetMsg.style.display = 'inline-grid'
     }
 }
+
+// function checkUsername (username){
+//     fetch(usersUrl)
+//     .then(resp => resp.json())
+//     .then(users => {
+//         users.forEach(user => {
+//             user.name === username
+//         })
+//     })
+// }
 
 
 
