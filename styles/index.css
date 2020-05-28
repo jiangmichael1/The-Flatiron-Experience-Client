@@ -60,7 +60,12 @@ h1 {
     
 }
 
-#current-skills {
+#turn-count{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#current-skills{
     font-size: 24px;
     font-weight: bold;
 }
@@ -68,7 +73,6 @@ h1 {
 #coding-knowledge{
     font-size: 20px;
     font-weight: bold;
-
 }
 
 
